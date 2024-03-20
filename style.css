@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+ 
+ body{
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100%;
+ }
+.logo{
+    height: 7vh;
+    width: 90px;
+}
+ /* MENU */
+ header{
+    background-color: #80808086;
+    height: 7vh;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+ }
+.menu{
+    margin: auto;
+}
+.menu ul{
+    display: flex;
+    gap:50px;
+ }
+ 
+.menu li{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    font-weight: bolder;
+    transition: background-color 0.5s ease-in-out; 
+    padding: 3px; 
+    border-radius: 10px;
+ }
+.menu a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease-in-out; 
+
+ }
+ 
+.menu li:hover{
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: rgba(80, 80, 80, 0.829);
+}
+.menu li a:hover{
+    color: white;
+}
+
+
+ /* CORPO */
+
+section{
+    margin-left: 8px;
+}
+section h1{
+    margin: 15px auto 15px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+label{
+    margin: 10px 0px;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+input{
+    height: 4vh;
+    width: 15vw;
+    font-weight: bold;
+}
+
+/* Caixa de opçoes */
+select{
+    width: 15vw;
+    height: 4vh;
+    font-size: 11pt;
+}
+option, optgroup{
+    font-size: 10pt;
+}
+
+.rs{
+    font-weight: bolder;
+}
+
+/* BOTAO */
+ .botao {
+    width: 12vw;
+    height: 5vh;
+    font-weight: bolder;
+    margin: 5px auto;
+    transition: background-color 0.5s ease-in-out;  
+}
+
+#pesquisar:hover{
+    background-color: green; 
+    color: white;
+}
+#limpar:hover{
+    background-color: #ff0000; 
+    color: white;
+}
+
+
+
+
+  

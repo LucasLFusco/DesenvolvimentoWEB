@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atividade</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+   <!-- CABEÇALHO -->
+   <header>
+       <img src="logo.png" alt="J" class="logo">
+       <nav class="menu">
+           <ul>
+               <li><a href="#">Processos</a></li>
+               <li><a href="#">Clientes</a></li>
+               <li><a href="#">Fórum</a></li>
+               <li><a href="#">Anexos</a></li>
+           </ul>
+       </nav>
+   </header>
+
+
+   <!-- CORPO -->
+   <section>
+
+
+       <h1>Jose's Advocacia</h1>
+
+
+       <form action="formulario.php" method="post">
+        <label for="processo">Número do Processo:</label>
+        <input type="number" name="numeroProcesso" id="processo" placeholder="Número do Processo" required>
+    
+        <label for="cliente">Nome do Cliente:</label>
+        <input type="text" name="nomeCliente" id="cliente" placeholder="Nome do Cliente" required >
+    
+        <label for="estado">Fórum:</label>
+        <select name="estado" id="estado">
+            <optgroup label="Zona Norte">
+                <option value="Francisco Morato">Francisco Morato</option>
+                <option value="Mairiporã">Mairiporã</option>
+                <option value="Franco da Rocha">Franco da Rocha</option>
+            </optgroup>
+            <optgroup label="Centro">
+                <option value="Centro" selected>Centro</option>
+            </optgroup>
+            <optgroup label="Zona Oeste">
+                <option value="Itapevi">Itapevi</option>
+                <option value="Osasco">Osasco</option>
+                <option value="Barueri">Barueri</option>
+            </optgroup>
+            <optgroup label="Zona Leste">
+                <option value="Mogi das Cruzes">Mogi das Cruzes</option>
+                <option value="Salesópolis">Salesópolis</option>
+                <option value="Itaquaquecetuba">Itaquaquecetuba</option>
+            </optgroup>
+            <optgroup label="Zona Sul">
+                <option value="Capão Redondo">Capão Redondo</option>
+                <option value="Grajaú">Grajaú</option>
+                <option value="Juquitiba">Juquitiba</option>
+            </optgroup>
+        </select>
+    
+        <label for="data">Data:</label>
+        <input type="date" name="date" id="data" required>
+
+        <label for="valor">Valor:</label>
+            <div class="cifra">
+        <span class="rs">R$</span>
+        <input type="number" name="valor" id="valor" required>
+            </div>
+
+        <label for="documento">Documentos:</label>
+        <input type="file" name="documento1" id="documento1">
+        <input type="file" name="documento2" id="documento2">
+        <input type="file" name="documento3" id="documento3">
+        
+        
+
+
+        <input type="submit" value="Pesquisar" class="botao" id="pesquisar">
+        <input type="reset" value="Limpar" class="botao" id="limpar">
+    </form>
+    
+       
+      
+
+   </section>
+
+
+<!-- RODAPE -->
+   <footer>
+
+
+   </footer>
+</body>
+</html>
